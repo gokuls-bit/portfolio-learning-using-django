@@ -1,0 +1,45 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{% block title %}Portfolio | Gokul Kumar Sant{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="{% url 'home' %}">Gokul Kumar Sant</a>
+      <nav class="nav__menu">
+        <a href="{% url 'home' %}" class="nav__link">Home</a>
+        <a href="{% url 'education' %}" class="nav__link">Education</a>
+        <a href="{% url 'projects' %}" class="nav__link">Projects</a>
+        <a href="{% url 'experience' %}" class="nav__link">Experience</a>
+        <a href="{% url 'contact' %}" class="nav__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="container section">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Gokul Kumar Sant | Built with ❤️ using Django</p>
+      <div class="footer__links">
+        <a href="https://github.com/gokuls-bit" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/gokul-kumar-sant-581145205" target="_blank">LinkedIn</a>
+        <a href="mailto:gokulkumarsant2540@gmail.com">Email</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

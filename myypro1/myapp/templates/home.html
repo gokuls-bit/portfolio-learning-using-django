@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio | Gokul Kumar Sant</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="{% url 'home' %}">Gokul Kumar Sant</a>
+      <nav class="nav__menu">
+        <a href="{% url 'home' %}" class="nav__link is-active">Home</a>
+        <a href="{% url 'about' %}" class="nav__link">About</a>
+        <a href="{% url 'projects' %}" class="nav__link">Projects</a>
+        <a href="{% url 'experience' %}" class="nav__link">Experience</a>
+        <a href="{% url 'contact' %}" class="nav__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1>Hi, I’m <span class="highlight">Gokul Kumar Sant</span></h1>
+      <p class="lead">Aspiring AI Engineer | Full-Stack Developer | Problem Solver</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="{% url 'projects' %}">View My Work</a>
+        <a class="btn btn--ghost" href="{% url 'contact' %}">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="container section">
+    <h2>About Me</h2>
+    <p>
+      I am a Computer Engineering student (CSE – AI/ML Stream), passionate about 
+      building scalable applications, AI/ML models, and impactful digital solutions. 
+      I enjoy solving problems using code and constantly learning new technologies.
+    </p>
+  </section>
+
+  <!-- Education Section -->
+  <section class="container section">
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li><strong>B.Tech in Computer Science (AI/ML)</strong> – Ongoing (5th Semester)</li>
+      <li>SWAYAM Course: Cyber Security, Tools & Techniques</li>
+      <li>Additional Skills: MERN, Django, Next.js, Flutter, TensorFlow, Docker, DevOps</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="container section">
+    <h2>Projects</h2>
+    <div class="grid grid--2 gap-lg">
+      <article class="card">
+        <h3 class="card__title">Furnimart Chatbox</h3>
+        <p class="card__body">A MERN-based real-time chatbox app with Socket.IO integration, categorized users, and stored chat history.</p>
+        <a class="btn btn--sm" href="#">View Project</a>
+      </article>
+      <article class="card">
+        <h3 class="card__title">Bhagwat Praptati</h3>
+        <p class="card__body">Next.js web app for recording & tracking chanting progress with Chart.js visualizations and MongoDB storage.</p>
+        <a class="btn btn--sm" href="#">View Project</a>
+      </article>
+      <article class="card">
+        <h3 class="card__title">DCGAN on Fashion MNIST</h3>
+        <p class="card__body">Trained a Deep Convolutional GAN model in TensorFlow for generating synthetic fashion images.</p>
+        <a class="btn btn--sm" href="#">View Project</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="container section">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li>Graphics Developer & Copywriter (Fiverr Freelance) – Figma, UI/UX, professional content</li>
+      <li>Personal Projects – MERN, Django, Next.js, AI/ML research, deployed apps</li>
+      <li>GitHub Profile – Full-stack projects, AI model training, cloud deployment</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Gokul Kumar Sant. Built with ❤️ using Django & CSS.</p>
+      <div class="footer__links">
+        <a href="{% url 'contact' %}">Contact</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
