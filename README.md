@@ -89,27 +89,49 @@ To run this project locally, follow these steps:
 ## 📂 File Structure
 
 The project is organized using a standard Django application structure.
-
-
-.
-├── myapp/
-│   ├── static/
-│   │   ├── myapp/
-│   │   │   ├── css/
-│   │   │   │   └── styles.css      # Main CSS file
-│   │   │   ├── images/             # Image assets
-│   │   │   └── js/                 # (Optional) External JS files
-│   ├── templates/
-│   │   ├── myapp/
-│   │   │   ├── _navbar.html        # Navbar partial
-│   │   │   ├── _footer.html        # Footer partial
-│   │   │   ├── base.html           # Base layout template
-│   │   │   └── home.html           # Main page content
-│   ├── views.py                    # Handles page rendering and form logic
-│   ├── urls.py                     # URL routing
-│   └── ...                         # Other Django files
-├── manage.py
-└── requirements.txt
+├── README.md
+└── myypro1
+    ├── db.sqlite3
+    ├── manage.py
+    ├── myapp
+        ├── __init__.py
+        ├── __pycache__
+        │   ├── __init__.cpython-313.pyc
+        │   ├── admin.cpython-313.pyc
+        │   ├── apps.cpython-313.pyc
+        │   ├── models.cpython-313.pyc
+        │   └── views.cpython-313.pyc
+        ├── admin.py
+        ├── apps.py
+        ├── migrations
+        │   ├── __init__.py
+        │   └── __pycache__
+        │   │   └── __init__.cpython-313.pyc
+        ├── models.py
+        ├── static
+        │   └── myapp
+        │   │   └── styles.css
+        ├── templates
+        │   ├── base.html
+        │   ├── contact.html
+        │   ├── education.html
+        │   ├── experience.html
+        │   ├── home.html
+        │   └── projects.html
+        ├── tests.py
+        ├── urls.py
+        └── views.py
+    └── myypro1
+        ├── __init__.py
+        ├── __pycache__
+            ├── __init__.cpython-313.pyc
+            ├── settings.cpython-313.pyc
+            ├── urls.cpython-313.pyc
+            └── wsgi.cpython-313.pyc
+        ├── asgi.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
 
 
 ---
