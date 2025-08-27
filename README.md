@@ -1,6 +1,6 @@
 # Gokul Sant - Professional Portfolio
 
-![Portfolio Screenshot](https://i.imgur.com/your-screenshot-url.png) <!-- Replace with a URL to a screenshot of your portfolio -->
+![Portfolio Screenshot]("C:\Users\gokul\OneDrive\colage working projects\list of django projects\DJANGO-portfolio\myypro1\sc portfolio.png") <!-- Replace with a URL to a screenshot of your portfolio -->
 
 Welcome to the official repository for my personal portfolio website. This project is a modern, interactive, and fully responsive showcase of my skills, projects, and professional experience as a multidisciplinary developer and innovator. It is built with a custom, high-performance front-end using pure HTML, CSS, and JavaScript, powered by a robust Django backend.
 
