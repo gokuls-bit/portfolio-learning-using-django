@@ -5,7 +5,7 @@
 Welcome to the official repository for my personal portfolio website. This project is a modern, interactive, and fully responsive showcase of my skills, projects,  and professional experience as a multidisciplinary developer and innovator. It is built with a custom, high-performance front-end using pure HTML, CSS, and JavaScript, powered by a robust Django backend.
 
 ---
-
+ 
 ## ✨ Features
 
 This portfolio is designed to be more than just a static page; it's an interactive experience.
