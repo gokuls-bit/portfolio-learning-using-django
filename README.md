@@ -7,7 +7,7 @@ Welcome to the official repository for my personal portfolio website. This proje
 ---
  
 ## ✨ Features
-
+ 
 This portfolio is designed to be more than just a static page; it's an interactive experience.
 
 * **Modern, Professional UI**: A clean, minimalist design with a sophisticated dark theme, inspired by top-tier tech portfolios.
